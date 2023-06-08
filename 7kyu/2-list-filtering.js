@@ -26,4 +26,5 @@ function filter_list(l) {
     // Return a new array with the strings filtered out
     return l.filter((char) => typeof char == 'number')
 } // This version works, the main differences seem to be having the return on the same line and not having it triple equals allowing more leniency on type.
+// The issue (found through testing), seems that in the first attempt, I forgot to store the filtered work or immediately return it. Either attempt works, it is not the fault of the double equal, triple equal works also.
 // This answer was achieved after looking at the answers. 
